@@ -1,0 +1,1846 @@
+/* ======================================================
+   STYLE.CSS — Below-the-fold section styles
+   Sections: Success Stories, Video, Services, Team,
+             Partners (Producers), FAQs
+   ====================================================== */
+
+
+/* ======================================================
+   SUCCESS STORIES SECTION (.musik-success-section)
+   ====================================================== */
+
+/* Scoped CSS Variables */
+.musik-success-section {
+  --primary-gold: #b88a44;
+  --primary-gold-hover: #a37835;
+  --text-dark: #111111;
+  --text-gray: #666666;
+  --bg-cream: #fbf9f6; /* Matches the off-white background */
+  --card-bg: #ffffff;
+  --border-color: #e8e4db;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  padding: 6rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.musik-success-section *, 
+.musik-success-section *::before, 
+.musik-success-section *::after {
+  box-sizing: border-box;
+}
+
+/* --- Header Section --- */
+.musik-success-section .mf-header-wrapper {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.musik-success-section .mf-overline {
+  color: var(--primary-gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.musik-success-section .mf-logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.musik-success-section .mf-logo-mark::before,
+.musik-success-section .mf-logo-mark::after {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: var(--primary-gold);
+  opacity: 0.5;
+}
+
+.musik-success-section .mf-logo-mark img {
+  height: 30px;
+  width: auto;
+}
+
+.musik-success-section .mf-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.musik-success-section .mf-title span {
+  font-style: italic;
+  color: var(--primary-gold);
+}
+
+.musik-success-section .mf-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+/* --- Cards Grid --- */
+.musik-success-section .mf-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.musik-success-section .mf-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(232, 228, 219, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.musik-success-section .mf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.musik-success-section .mf-card-main {
+  display: flex;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.musik-success-section .mf-card-image {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.musik-success-section .mf-card-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.musik-success-section .mf-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.musik-success-section .mf-quote-icon {
+  color: var(--primary-gold);
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  line-height: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.musik-success-section .mf-quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.musik-success-section .mf-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.musik-success-section .mf-artist-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+}
+
+.musik-success-section .mf-artist-role {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin: 0 0 1rem 0;
+}
+
+.musik-success-section .mf-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--primary-gold);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--primary-gold);
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+/* --- Card Footer --- */
+.musik-success-section .mf-card-footer {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+}
+
+.musik-success-section .mf-stars {
+  color: var(--primary-gold);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.musik-success-section .mf-verified {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.musik-success-section .mf-verified-icon {
+  color: var(--primary-gold);
+  background: #fdf3e1; /* very light gold */
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+
+/* --- Action Area --- */
+.musik-success-section .mf-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.musik-success-section .mf-btn-primary {
+  background: var(--primary-gold);
+  color: white;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+}
+
+.musik-success-section .mf-btn-primary:hover {
+  background: var(--primary-gold-hover);
+  transform: translateY(-2px);
+}
+
+.musik-success-section .mf-link-secondary {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.musik-success-section .mf-link-secondary:hover {
+  color: var(--primary-gold);
+  border-bottom-color: var(--primary-gold);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .musik-success-section .mf-card-main { padding: 1.2rem; gap: 1rem; }
+  .musik-success-section .mf-card-image { width: 120px; }
+  .musik-success-section .mf-title { font-size: 3rem; }
+}
+
+@media (max-width: 992px) {
+  .musik-success-section .mf-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .musik-success-section { padding: 4rem 5%; }
+  .musik-success-section .mf-cards-grid { grid-template-columns: 1fr; }
+  .musik-success-section .mf-actions { flex-direction: column; gap: 1.5rem; }
+  .musik-success-section .mf-title { font-size: 2.5rem; }
+  .musik-success-section .mf-card-main { flex-direction: column; }
+  .musik-success-section .mf-card-image { width: 100%; }
+  .musik-success-section .mf-card-image img { height: 250px; }
+}
+
+
+/* ======================================================
+   VIDEO TESTIMONIALS SECTION (.musik-video-section)
+   ====================================================== */
+
+/* Scoped CSS Variables */
+.musik-video-section {
+  --primary-gold: #b88a44;
+  --primary-gold-hover: #9c7438;
+  --text-dark: #111111;
+  --text-gray: #666666;
+  --bg-cream: #fdfcf9;
+  --card-bg: #ffffff;
+  --border-color: #e8e4db;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  padding: 5rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.musik-video-section *, 
+.musik-video-section *::before, 
+.musik-video-section *::after {
+  box-sizing: border-box;
+}
+
+/* --- Header Section --- */
+.musik-video-section .mvt-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.musik-video-section .mvt-logo {
+  margin-bottom: 1.5rem;
+}
+
+.musik-video-section .mvt-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.musik-video-section .mvt-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.musik-video-section .mvt-title span {
+  font-style: italic;
+  color: var(--primary-gold);
+}
+
+.musik-video-section .mvt-subtitle {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* --- Video Grid --- */
+.musik-video-section .mvt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* --- Video Cards --- */
+.musik-video-section .mvt-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.musik-video-section .mvt-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Video Thumbnail Area */
+.musik-video-section .mvt-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.musik-video-section .mvt-video-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  opacity: 0.85;
+}
+
+.musik-video-section .mvt-card:hover .mvt-video-wrapper img {
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+
+/* YouTube Logo Overlay Placeholder */
+.musik-video-section .mvt-yt-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.musik-video-section .mvt-yt-badge::before {
+  content: "▶";
+  background: #ff0000;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.6rem;
+}
+
+/* Play Button */
+.musik-video-section .mvt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.musik-video-section .mvt-play-btn::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent white;
+  margin-left: 4px; /* Optically center the triangle */
+  transition: border-color 0.3s ease;
+}
+
+.musik-video-section .mvt-card:hover .mvt-play-btn {
+  background: white;
+}
+
+.musik-video-section .mvt-card:hover .mvt-play-btn::after {
+  border-color: transparent transparent transparent var(--text-dark);
+}
+
+/* Duration Badge */
+.musik-video-section .mvt-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* Card Content Area */
+.musik-video-section .mvt-content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.musik-video-section .mvt-quote-icon {
+  color: var(--primary-gold);
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  line-height: 0;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+
+.musik-video-section .mvt-quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+  font-style: italic;
+  margin: 0 0 2rem 0;
+  text-indent: 1.8rem; /* Make room for the quote icon */
+  flex: 1;
+}
+
+.musik-video-section .mvt-artist-info {
+  margin-top: auto;
+}
+
+.musik-video-section .mvt-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--primary-gold);
+  text-transform: uppercase;
+  margin: 0 0 0.3rem 0;
+}
+
+.musik-video-section .mvt-role {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* --- Footer / Actions --- */
+.musik-video-section .mvt-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.musik-video-section .mvt-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 2.5rem;
+}
+
+.musik-video-section .mvt-divider::before,
+.musik-video-section .mvt-divider::after {
+  content: "";
+  height: 1px;
+  background-color: var(--border-color);
+  flex: 1;
+  max-width: 40%;
+}
+
+.musik-video-section .mvt-divider-icon {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--primary-gold);
+  transform: rotate(45deg);
+}
+
+.musik-video-section .mvt-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.musik-video-section .mvt-btn-primary {
+  background: var(--primary-gold);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+}
+
+.musik-video-section .mvt-btn-primary:hover {
+  background: var(--primary-gold-hover);
+}
+
+.musik-video-section .mvt-link-secondary {
+  color: var(--primary-gold);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.musik-video-section .mvt-link-secondary:hover {
+  color: var(--text-dark);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .musik-video-section .mvt-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .musik-video-section { padding: 4rem 5%; }
+  .musik-video-section .mvt-grid { grid-template-columns: 1fr; }
+  .musik-video-section .mvt-title { font-size: 2.5rem; }
+  .musik-video-section .mvt-actions { flex-direction: column; gap: 1.5rem; }
+  .musik-video-section .mvt-divider::before,
+  .musik-video-section .mvt-divider::after { max-width: 30%; }
+}
+
+
+/* ======================================================
+   SERVICES SECTION (.musik-services-section)
+   ====================================================== */
+
+/* Scoped Design Tokens (Bone, Charcoal, Accent) */
+.musik-services-section {
+  --primary-gold: #b88a44;
+  --primary-gold-dark: #956e31;
+  --text-dark: #111111;
+  --text-gray: #555555;
+  --bg-bone: #fcfbfa; /* Soft off-white matching the image background */
+  --card-bg: #ffffff;
+  --border-color: #eaddcb; /* Subtle warm border for the divider */
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  font-family: var(--font-sans);
+  background-color: var(--bg-bone);
+  color: var(--text-dark);
+  padding: 6rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 4rem;
+}
+
+.musik-services-section *, 
+.musik-services-section *::before, 
+.musik-services-section *::after {
+  box-sizing: border-box;
+}
+
+/* Abstract wave background hint (Left side) */
+.musik-services-section::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 40%;
+  height: 120%;
+  background: radial-gradient(ellipse at center right, rgba(184, 138, 68, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Vertical Divider */
+.musik-services-section::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: 44%; /* Adjusted for wider left column */
+  width: 1px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+/* --- Left Column: Intro & CTA --- */
+.musik-services-section .msrv-left-col {
+  flex: 0 0 40%; /* Wider left column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-right: 2rem;
+}
+
+.musik-services-section .msrv-overline {
+  color: var(--primary-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.musik-services-section .msrv-title {
+  font-family: var(--font-serif);
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.musik-services-section .msrv-divider-line {
+  height: 2px;
+  width: 50px;
+  background-color: var(--primary-gold);
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.musik-services-section .msrv-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin: 0 0 2.5rem 0;
+  max-width: 95%;
+}
+
+.musik-services-section .msrv-btn {
+  background: linear-gradient(135deg, #c4964d 0%, #956e31 100%);
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  align-self: flex-start;
+  box-shadow: 0 10px 25px rgba(184, 138, 68, 0.25);
+}
+
+.musik-services-section .msrv-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(184, 138, 68, 0.35);
+  background: linear-gradient(135deg, #d1a35a 0%, #a37936 100%);
+}
+
+/* --- Right Column: Services Grid --- */
+.musik-services-section .msrv-right-col {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  padding-left: 2rem;
+}
+
+/* Service Card */
+.musik-services-section .msrv-card {
+  background: var(--card-bg);
+  flex: 0 0 calc(33.333% - 1.34rem); /* 3 columns minus the gap */
+  min-width: 240px;
+  max-width: 280px;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255,255,255,0.5); /* Soft highlight edge */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.musik-services-section .msrv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon Container */
+.musik-services-section .msrv-icon-wrapper {
+  width: 65px;
+  height: 65px;
+  background-color: var(--text-dark); /* Charcoal background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 20px rgba(17, 17, 17, 0.15), inset 0 0 0 1px rgba(184, 138, 68, 0.3); /* Outer shadow + inner gold ring */
+  position: relative;
+}
+
+/* Subtle glow behind the icon container */
+.musik-services-section .msrv-icon-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(184, 138, 68, 0.2);
+  z-index: -1;
+}
+
+.musik-services-section .msrv-icon-wrapper img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.musik-services-section .msrv-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.musik-services-section .msrv-card-desc {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin: 0 0 2rem 0;
+  flex: 1; /* Pushes the arrow to the bottom */
+}
+
+.musik-services-section .msrv-arrow {
+  color: var(--primary-gold);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.musik-services-section .msrv-card:hover .msrv-arrow {
+  transform: translateX(5px);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .musik-services-section::after { left: 44%; }
+  .musik-services-section .msrv-left-col { flex: 0 0 40%; }
+  .musik-services-section .msrv-card { flex: 0 0 calc(50% - 1rem); } /* Switch to 2 columns on medium screens */
+}
+
+@media (max-width: 992px) {
+  .musik-services-section { flex-direction: column; gap: 4rem; text-align: center; }
+  .musik-services-section::after { display: none; }
+  .musik-services-section .msrv-left-col { padding-right: 0; align-items: center; }
+  .musik-services-section .msrv-right-col { padding-left: 0; }
+  .musik-services-section .msrv-btn { align-self: center; }
+  .musik-services-section .msrv-divider-line { margin: 0 auto 1.5rem auto; }
+  .musik-services-section .msrv-desc { max-width: 700px; }
+}
+
+@media (max-width: 768px) {
+  .musik-services-section { padding: 4rem 5%; }
+  .musik-services-section .msrv-title { font-size: 3rem; }
+  .musik-services-section .msrv-card { flex: 0 0 100%; max-width: 400px; }
+}
+
+
+/* ======================================================
+   TEAM SECTION (.musik-team-section)
+   ====================================================== */
+
+/* Scoped Design Tokens */
+.musik-team-section {
+  --primary-gold: #b88a44;
+  --primary-gold-hover: #9c7438;
+  --text-dark: #1a1a1a;
+  --text-gray: #666666;
+  --bg-cream: #f9f8f4;
+  --surface-white: #ffffff;
+  --border-color: #e5e0d8;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  padding: 6rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1/3 and 2/3 split */
+  gap: 4rem;
+}
+
+.musik-team-section *, 
+.musik-team-section *::before, 
+.musik-team-section *::after {
+  box-sizing: border-box;
+}
+
+/* Subtle background map/waves placeholder */
+.musik-team-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(184, 138, 68, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Vertical Divider between columns */
+.musik-team-section::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: calc(33.33% - 2rem); /* Positioned between the grid columns */
+  width: 1px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+/* --- Left Column: Header Area --- */
+.musik-team-section .mteam-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-right: 2rem;
+}
+
+.musik-team-section .mteam-overline-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.musik-team-section .mteam-overline {
+  color: var(--primary-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.musik-team-section .mteam-overline-line {
+  height: 1px;
+  width: 40px;
+  background-color: var(--primary-gold);
+}
+
+.musik-team-section .mteam-title {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.musik-team-section .mteam-title span {
+  font-style: italic;
+  color: var(--primary-gold);
+}
+
+.musik-team-section .mteam-divider-star {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+.musik-team-section .mteam-divider-star::before,
+.musik-team-section .mteam-divider-star::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background-color: var(--border-color);
+}
+
+.musik-team-section .mteam-star-icon {
+  color: var(--primary-gold);
+  font-size: 0.8rem;
+}
+
+.musik-team-section .mteam-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin: 0 0 2.5rem 0;
+  max-width: 90%;
+}
+
+.musik-team-section .mteam-btn {
+  background: linear-gradient(135deg, #b88a44 0%, #8c6428 100%);
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  align-self: flex-start;
+  box-shadow: 0 8px 20px rgba(184, 138, 68, 0.2);
+}
+
+.musik-team-section .mteam-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(184, 138, 68, 0.3);
+}
+
+/* --- Right Column: Team Grid --- */
+.musik-team-section .mteam-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4rem;
+  column-gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Team Card */
+.musik-team-section .mteam-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.musik-team-section .mteam-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Portrait Wrapper with Double Border */
+.musik-team-section .mteam-portrait-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 5px; /* Spacing for inner border */
+  border: 1px solid rgba(184, 138, 68, 0.4); /* Outer Gold Border */
+}
+
+.musik-team-section .mteam-portrait {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--surface-white); /* Inner White Border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.musik-team-section .mteam-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating Icon on Portrait */
+.musik-team-section .mteam-role-icon {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: var(--surface-white);
+  border: 1px solid var(--primary-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-gold);
+  font-size: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.musik-team-section .mteam-role-icon img {
+   width: 14px;
+   height: 14px;
+   object-fit: contain;
+}
+
+/* Member Details */
+.musik-team-section .mteam-name {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin: 0 0 0.3rem 0;
+  font-weight: 600;
+}
+
+.musik-team-section .mteam-role {
+  font-size: 0.75rem;
+  color: var(--primary-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+}
+
+.musik-team-section .mteam-bio {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin: 0 0 1.5rem 0;
+  padding: 0 10px;
+}
+
+/* Social Link */
+.musik-team-section .mteam-social {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--primary-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-gold);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto; /* Push to bottom if bio heights differ */
+}
+
+.musik-team-section .mteam-social:hover {
+  background: var(--primary-gold);
+  color: white;
+}
+
+.musik-team-section .mteam-social img {
+   width: 12px;
+   height: 12px;
+   object-fit: contain;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+  .musik-team-section { grid-template-columns: 1fr 1.5fr; gap: 2rem; }
+  .musik-team-section .mteam-title { font-size: 3.5rem; }
+  .musik-team-section::after { left: calc(40% - 1rem); }
+}
+
+@media (max-width: 992px) {
+  .musik-team-section { grid-template-columns: 1fr; gap: 4rem; text-align: center; }
+  .musik-team-section::after { display: none; }
+  .musik-team-section .mteam-header { padding-right: 0; align-items: center; }
+  .musik-team-section .mteam-overline-group { justify-content: center; }
+  .musik-team-section .mteam-divider-star { justify-content: center; margin: 0 auto 1.5rem auto; }
+  .musik-team-section .mteam-btn { align-self: center; }
+}
+
+@media (max-width: 768px) {
+  .musik-team-section { padding: 4rem 5%; }
+  .musik-team-section .mteam-grid { grid-template-columns: repeat(2, 1fr); row-gap: 3rem; }
+  .musik-team-section .mteam-title { font-size: 3rem; }
+}
+
+@media (max-width: 576px) {
+  .musik-team-section .mteam-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ======================================================
+   PARTNERS / PRODUCERS SECTION (.musik-partners-section)
+   ====================================================== */
+
+/* Scoped CSS Variables */
+.musik-partners-section {
+  --primary-gold: #b88a44;
+  --primary-gold-hover: #9c7438;
+  --text-dark: #111111;
+  --text-gray: #666666;
+  --text-light-gray: #999999;
+  --bg-cream: #fbf9f6;
+  --card-bg: #ffffff;
+  --border-color: #f0ece3;
+  --line-color: #e3dec9;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  padding: 6rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.musik-partners-section *, 
+.musik-partners-section *::before, 
+.musik-partners-section *::after {
+  box-sizing: border-box;
+}
+
+/* Background subtle glow effect to mimic the image's airy feel */
+.musik-partners-section::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(251,249,246,0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Animations */
+@keyframes mpFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mp-animate {
+  animation: mpFadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.mp-delay-1 { animation-delay: 0.2s; }
+.mp-delay-2 { animation-delay: 0.4s; }
+.mp-delay-3 { animation-delay: 0.6s; }
+
+/* --- Container & Header --- */
+.musik-partners-section .mp-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.musik-partners-section .mp-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+}
+
+.musik-partners-section .mp-overline {
+  color: var(--primary-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.musik-partners-section .mp-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.musik-partners-section .mp-title span {
+  font-style: italic;
+  color: var(--primary-gold);
+}
+
+.musik-partners-section .mp-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin: 0;
+}
+
+/* --- Category Divider --- */
+.musik-partners-section .mp-category-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 3rem 0 2rem 0;
+}
+
+.musik-partners-section .mp-category-line {
+  height: 1px;
+  flex: 1;
+  background-color: var(--line-color);
+}
+
+.musik-partners-section .mp-category-title {
+  color: var(--primary-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* --- Logo Grids --- */
+.musik-partners-section .mp-grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.musik-partners-section .mp-grid-8 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.musik-partners-section .mp-grid-10 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* --- Logo Card (Rectangular for landscape logos) --- */
+.musik-partners-section .mp-logo-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+  aspect-ratio: 3 / 2; /* Rectangular to match logo aspect ratio */
+}
+
+.musik-partners-section .mp-logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  border-color: var(--line-color);
+}
+
+.musik-partners-section .mp-logo-image {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.musik-partners-section .mp-logo-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(120%) opacity(0.7);
+  transition: all 0.3s ease;
+}
+
+.musik-partners-section .mp-logo-card:hover .mp-logo-image img {
+  filter: grayscale(0%) opacity(1);
+}
+
+.musik-partners-section .mp-logo-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-light-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- CTAs --- */
+.musik-partners-section .mp-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.musik-partners-section .mp-btn {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+  text-decoration: none;
+}
+
+.musik-partners-section .mp-btn-primary {
+  background: var(--primary-gold);
+  color: white;
+  border: 1px solid var(--primary-gold);
+}
+
+.musik-partners-section .mp-btn-primary:hover {
+  background: var(--primary-gold-hover);
+  border-color: var(--primary-gold-hover);
+  transform: translateY(-2px);
+}
+
+.musik-partners-section .mp-btn-secondary {
+  background: transparent;
+  color: var(--primary-gold);
+  border: 1px solid #dcd7c8;
+}
+
+.musik-partners-section .mp-btn-secondary:hover {
+  border-color: var(--primary-gold);
+  color: var(--primary-gold-hover);
+  transform: translateY(-2px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .musik-partners-section .mp-grid-8 { grid-template-columns: repeat(5, 1fr); }
+  .musik-partners-section .mp-grid-10 { grid-template-columns: repeat(5, 1fr); }
+}
+}
+
+@media (max-width: 992px) {
+  .musik-partners-section .mp-grid-8 { grid-template-columns: repeat(3, 1fr); }
+  .musik-partners-section .mp-grid-10 { grid-template-columns: repeat(3, 1fr); }
+  .musik-partners-section .mp-title { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .musik-partners-section { padding: 4rem 5%; }
+  .musik-partners-section .mp-grid-8 { grid-template-columns: repeat(3, 1fr); }
+  .musik-partners-section .mp-grid-10 { grid-template-columns: repeat(3, 1fr); }
+  .musik-partners-section .mp-title { font-size: 2.5rem; }
+  .musik-partners-section .mp-actions { flex-direction: column; width: 100%; max-width: 300px; margin: 3rem auto 0 auto;}
+  .musik-partners-section .mp-btn { width: 100%; justify-content: center; }
+  .musik-partners-section .mp-category-line { max-width: 40px; }
+}
+
+@media (max-width: 480px) {
+  .musik-partners-section .mp-grid-8 { grid-template-columns: repeat(2, 1fr); }
+  .musik-partners-section .mp-grid-10 { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* ======================================================
+   FAQ SECTION (.musik-faq-section)
+   ====================================================== */
+
+/* Scoped Design Tokens */
+.musik-faq-section {
+  --primary-gold: #b88a44;
+  --primary-gold-hover: #9c7438;
+  --text-dark: #111111;
+  --text-gray: #666666;
+  --bg-cream: #fdfcf9;
+  --surface-white: #ffffff;
+  --border-color: #e5e0d8;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  padding: 6rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.musik-faq-section *, 
+.musik-faq-section *::before, 
+.musik-faq-section *::after {
+  box-sizing: border-box;
+}
+
+/* Subtle background accent */
+.musik-faq-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(184, 138, 68, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes faqFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.musik-faq-section .faq-animate {
+  animation: faqFadeUp 0.8s ease forwards;
+}
+
+/* --- Header Area --- */
+.musik-faq-section .mfaq-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.musik-faq-section .mfaq-overline {
+  color: var(--primary-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.musik-faq-section .mfaq-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.musik-faq-section .mfaq-title span {
+  font-style: italic;
+  color: var(--primary-gold);
+}
+
+.musik-faq-section .mfaq-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.musik-faq-section .mfaq-divider::before,
+.musik-faq-section .mfaq-divider::after {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: var(--primary-gold);
+  opacity: 0.6;
+}
+
+.musik-faq-section .mfaq-divider span {
+  font-family: var(--font-serif);
+  color: var(--primary-gold);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* --- Main Layout Grid --- */
+.musik-faq-section .mfaq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Left Column: Media & Stats --- */
+.musik-faq-section .mfaq-media-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Feature Image Card */
+.musik-faq-section .mfaq-image-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.musik-faq-section .mfaq-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.musik-faq-section .mfaq-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.musik-faq-section .mfaq-overlay-logo {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+
+.musik-faq-section .mfaq-overlay-text {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Stats Card (Bottom Left) */
+.musik-faq-section .mfaq-stats-card {
+  background: var(--surface-white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+}
+
+.musik-faq-section .mfaq-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.musik-faq-section .mfaq-stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: var(--border-color);
+}
+
+.musik-faq-section .mfaq-stat-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--primary-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.musik-faq-section .mfaq-stat-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.musik-faq-section .mfaq-stat-val {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0 0 0.2rem 0;
+}
+
+.musik-faq-section .mfaq-stat-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+}
+
+.musik-faq-section .mfaq-stat-desc {
+  font-size: 0.7rem;
+  color: var(--text-gray);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* --- Right Column: FAQ Accordion --- */
+.musik-faq-section .mfaq-accordion-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.musik-faq-section .mfaq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.musik-faq-section .mfaq-item {
+  background: var(--surface-white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.musik-faq-section .mfaq-item:hover {
+  border-color: #d8cebd;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.musik-faq-section .mfaq-summary {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none; /* Hide default triangle */
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  user-select: none;
+}
+
+/* Hide default triangle in Webkit */
+.musik-faq-section .mfaq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.musik-faq-section .mfaq-q-mark {
+  color: var(--primary-gold);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+  font-weight: 500;
+}
+
+.musik-faq-section .mfaq-icon {
+  margin-left: auto;
+  color: var(--primary-gold);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon when open */
+.musik-faq-section .mfaq-item[open] .mfaq-icon {
+  transform: rotate(45deg);
+}
+
+.musik-faq-section .mfaq-answer {
+  padding: 0 1.5rem 1.2rem 3.2rem; /* Indented to align with text */
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  animation: faqFadeUp 0.4s ease forwards;
+}
+
+/* Actions Bottom Right */
+.musik-faq-section .mfaq-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.musik-faq-section .mfaq-btn {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+  flex: 1;
+  text-decoration: none;
+}
+
+.musik-faq-section .mfaq-btn-primary {
+  background: var(--primary-gold);
+  color: white;
+  border: 1px solid var(--primary-gold);
+}
+
+.musik-faq-section .mfaq-btn-primary:hover {
+  background: var(--primary-gold-hover);
+  border-color: var(--primary-gold-hover);
+  transform: translateY(-2px);
+}
+
+.musik-faq-section .mfaq-btn-secondary {
+  background: var(--surface-white);
+  color: var(--primary-gold);
+  border: 1px solid var(--border-color);
+}
+
+.musik-faq-section .mfaq-btn-secondary:hover {
+  border-color: var(--primary-gold);
+  color: var(--primary-gold-hover);
+  transform: translateY(-2px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .musik-faq-section .mfaq-container { grid-template-columns: 1fr; gap: 4rem; }
+  .musik-faq-section .mfaq-image-card { max-height: 400px; }
+  .musik-faq-section .mfaq-actions { max-width: 500px; }
+}
+
+@media (max-width: 768px) {
+  .musik-faq-section { padding: 4rem 5%; }
+  .musik-faq-section .mfaq-title { font-size: 2.5rem; }
+  .musik-faq-section .mfaq-stats-card { flex-direction: column; gap: 1.5rem; padding: 2rem; }
+  .musik-faq-section .mfaq-stat:not(:last-child)::after { display: none; }
+  .musik-faq-section .mfaq-stat { border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem; width: 100%; }
+  .musik-faq-section .mfaq-stat:last-child { border-bottom: none; padding-bottom: 0; }
+  .musik-faq-section .mfaq-actions { flex-direction: column; width: 100%; max-width: 100%; }
+  .musik-faq-section .mfaq-btn { width: 100%; }
+}
