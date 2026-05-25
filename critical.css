@@ -34,6 +34,10 @@
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .musik-hero-section *, 
@@ -45,14 +49,14 @@
 /* --- Hero Main Content --- */
 .musik-hero-section .mf-hero-container {
   display: flex;
-  min-height: 100vh;
+  flex: 1;
   position: relative;
   padding: 0 5%;
 }
 
 .musik-hero-section .mf-hero-content {
   width: 50%;
-  padding: 6rem 4rem 6rem 0;
+  padding: 4vh 4rem 4vh 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -66,14 +70,14 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2vh;
 }
 
 .musik-hero-section .mf-title {
   font-family: var(--font-serif);
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 5vh + 1.5vw, 4.5rem);
   line-height: 1.1;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 2vh 0;
   color: var(--text-dark);
   font-weight: 600;
 }
@@ -85,10 +89,10 @@
 }
 
 .musik-hero-section .mf-description {
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2vh, 1.1rem);
   line-height: 1.6;
   color: var(--text-gray);
-  margin-bottom: 2.5rem;
+  margin-bottom: 3vh;
   max-width: 90%;
 }
 
@@ -171,7 +175,7 @@
 /* Floating Quote Card */
 .musik-hero-section .mf-quote-card {
   position: absolute;
-  bottom: 4rem;
+  bottom: 4vh;
   right: 15%;
   background: #1a1a1a;
   color: white;
@@ -205,7 +209,7 @@
   position: relative;
   z-index: 10;
   border-top: 1px solid var(--border-color);
-  padding: 3rem 5%;
+  padding: 3vh 5%;
 }
 
 .musik-hero-section .mf-stat-item {
@@ -241,7 +245,7 @@
 }
 
 .musik-hero-section .mf-stat-content h3 {
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 3vh + 1vw, 2.2rem);
   margin: 0 0 0.2rem 0;
   font-weight: 500;
 }
@@ -267,6 +271,7 @@
 }
 
 @media (max-width: 992px) {
+  .musik-hero-section { height: auto; }
   .musik-hero-section .mf-hero-content { width: 60%; padding: 4rem 2rem 4rem 0; }
   .musik-hero-section .mf-hero-visual { width: 50%; }
   .musik-hero-section .mf-stats-bar { flex-direction: column; gap: 2rem; }
