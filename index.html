@@ -8,9 +8,10 @@
   <meta name="description"
     content="We help independent artists break through the noise with powerful radio promotion, professional production, and global exposure that opens real doors.">
 
-  <!-- Google Fonts Preconnect -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
   <!-- Preload Hero Image (above the fold) -->
   <link rel="preload" as="image" href="./optimized/hero-image.webp" type="image/webp">
@@ -28,6 +29,7 @@
 
 <body>
 
+  <main>
   <!-- ====================================================
        SECTION 1: HERO
        ==================================================== -->
@@ -64,8 +66,8 @@
           <img src="./optimized/icon-sound-radio.webp" alt="Antenna Icon" width="30" height="30" loading="lazy" decoding="async">
         </div>
         <div class="mf-stat-content">
-          <h3>250,000+</h3>
-          <h4>Radio Stations</h4>
+          <div class="mf-stat-val">250,000+</div>
+          <div class="mf-stat-lbl">Radio Stations</div>
           <p>In our active network</p>
         </div>
       </div>
@@ -75,18 +77,18 @@
           <img src="./optimized/icon-community.webp" alt="Globe Icon" width="30" height="30" loading="lazy" decoding="async">
         </div>
         <div class="mf-stat-content">
-          <h3>180+</h3>
-          <h4>Countries</h4>
+          <div class="mf-stat-val">180+</div>
+          <div class="mf-stat-lbl">Countries</div>
           <p>Worldwide coverage</p>
         </div>
       </div>
 
       <div class="mf-stat-item">
         <div class="mf-stat-icon">
-          <img src="./optimized/icon-mic.webp" alt="Microphone Icon" width="30" height="30" loading="lazy" decoding="async">
+          <img src="./optimized/icon-music.webp" alt="Microphone Icon" width="30" height="30" loading="lazy" decoding="async">
         </div>
         <div class="mf-stat-content">
-          <h4 style="font-size: 1.1rem; margin-top: 5px;">Real Radio Airplay</h4>
+          <div class="mf-stat-lbl" style="font-size: 1.1rem; margin-top: 5px;">Real Radio Airplay</div>
           <p>On verified stations with<br>real listeners, real results</p>
         </div>
       </div>
@@ -209,13 +211,16 @@
 
       <div class="mvt-card">
         <div class="mvt-video-wrapper">
-          <iframe width="100%" height="225" src="https://www.youtube.com/embed/MWQSIw5wkQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="youtube-facade" data-embed="MWQSIw5wkQo">
+            <img src="./optimized/yt-thumb-1.webp" alt="Video from Yulia" loading="lazy" width="400" height="225">
+            <div class="play-button"></div>
+          </div>
         </div>
         <div class="mvt-content">
           <div class="mvt-quote-icon">&ldquo;</div>
           <p class="mvt-quote-text">Thank you so very much for the wonderful review of my song "Two Rivers".</p>
           <div class="mvt-artist-info">
-            <h4 class="mvt-name">Yulia</h4>
+            <h3 class="mvt-name">Yulia</h3>
             <p class="mvt-role">Indie Artist</p>
           </div>
         </div>
@@ -223,13 +228,16 @@
 
       <div class="mvt-card">
         <div class="mvt-video-wrapper">
-          <iframe width="100%" height="225" src="https://www.youtube.com/embed/NnBqrTJefJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="youtube-facade" data-embed="NnBqrTJefJ0">
+            <img src="./optimized/yt-thumb-2.webp" alt="Video from Tony Mangra" loading="lazy" width="400" height="225">
+            <div class="play-button"></div>
+          </div>
         </div>
         <div class="mvt-content">
           <div class="mvt-quote-icon">&ldquo;</div>
           <p class="mvt-quote-text">It is very rare to find someone who delivers on their pledge.</p>
           <div class="mvt-artist-info">
-            <h4 class="mvt-name">Tony Mangra</h4>
+            <h3 class="mvt-name">Tony Mangra</h3>
             <p class="mvt-role">Indie Artist</p>
           </div>
         </div>
@@ -237,13 +245,16 @@
 
       <div class="mvt-card">
         <div class="mvt-video-wrapper">
-          <iframe width="100%" height="225" src="https://www.youtube.com/embed/VfqvmDoLymY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="youtube-facade" data-embed="VfqvmDoLymY">
+            <img src="./optimized/yt-thumb-3.webp" alt="Video from Hope Arden" loading="lazy" width="400" height="225">
+            <div class="play-button"></div>
+          </div>
         </div>
         <div class="mvt-content">
           <div class="mvt-quote-icon">&ldquo;</div>
           <p class="mvt-quote-text">Action is happening, not just words.</p>
           <div class="mvt-artist-info">
-            <h4 class="mvt-name">Hope Arden</h4>
+            <h3 class="mvt-name">Hope Arden</h3>
             <p class="mvt-role">Singer Songwriter</p>
           </div>
         </div>
@@ -251,13 +262,16 @@
 
       <div class="mvt-card">
         <div class="mvt-video-wrapper">
-          <iframe width="100%" height="225" src="https://www.youtube.com/embed/OJApNVbZHuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="youtube-facade" data-embed="OJApNVbZHuo">
+            <img src="./optimized/yt-thumb-4.webp" alt="Video from Christopher Hill" loading="lazy" width="400" height="225">
+            <div class="play-button"></div>
+          </div>
         </div>
         <div class="mvt-content">
           <div class="mvt-quote-icon">&ldquo;</div>
           <p class="mvt-quote-text">They are truly a cut above their competitors.</p>
           <div class="mvt-artist-info">
-            <h4 class="mvt-name">Christopher Hill</h4>
+            <h3 class="mvt-name">Christopher Hill</h3>
             <p class="mvt-role">Singer Songwriter</p>
           </div>
         </div>
@@ -704,7 +718,7 @@
           <div class="mfaq-stats-card">
             <div class="mfaq-stat">
               <div class="mfaq-stat-icon">
-                <img src="./optimized/icon-mic.webp" alt="Antenna" width="24" height="24"
+                <img src="./optimized/icon-sound-radio.webp" alt="Antenna" width="24" height="24"
                   loading="lazy" decoding="async">
               </div>
               <h3 class="mfaq-stat-val">250,000+</h3>
@@ -714,7 +728,7 @@
 
             <div class="mfaq-stat">
               <div class="mfaq-stat-icon">
-                <img src="./optimized/icon-mic.webp" alt="Globe" width="24" height="24" loading="lazy"
+                <img src="./optimized/icon-community.webp" alt="Globe" width="24" height="24" loading="lazy"
                   decoding="async">
               </div>
               <h3 class="mfaq-stat-val">180+</h3>
@@ -724,11 +738,11 @@
 
             <div class="mfaq-stat">
               <div class="mfaq-stat-icon">
-                <img src="./optimized/icon-mic.webp" alt="Mic" width="24" height="24" loading="lazy"
+                <img src="./optimized/icon-music.webp" alt="Mic" width="24" height="24" loading="lazy"
                   decoding="async">
               </div>
               <h3 class="mfaq-stat-label" style="font-size: 0.8rem; margin-top: 5px;">Real Radio Airplay</h3>
-              <p class="mfaq-stat-desc">On verified stations with<br>real listeners, real results</p>
+              <p class="mfaq-stat-desc">Real listeners, Real results</p>
             </div>
           </div>
         </div>
@@ -816,7 +830,27 @@
     </div>
 
   </section>
+  </main>
 
+  <!-- YouTube Facade Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var facades = document.querySelectorAll('.youtube-facade');
+      facades.forEach(function(facade) {
+        facade.addEventListener('click', function() {
+          var embed = this.dataset.embed;
+          var iframe = document.createElement('iframe');
+          iframe.setAttribute('frameborder', '0');
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+          iframe.setAttribute('title', 'YouTube video player');
+          iframe.setAttribute('src', 'https://www.youtube.com/embed/' + embed + '?autoplay=1');
+          this.innerHTML = '';
+          this.appendChild(iframe);
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

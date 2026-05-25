@@ -11,7 +11,7 @@
 
 /* Scoped CSS Variables */
 .musik-success-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-hover: #a37835;
   --text-dark: #111111;
   --text-gray: #666666;
@@ -303,7 +303,7 @@
 
 /* Scoped CSS Variables */
 .musik-video-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-hover: #9c7438;
   --text-dark: #111111;
   --text-gray: #666666;
@@ -413,6 +413,22 @@
   opacity: 0.7;
 }
 
+.musik-video-section .youtube-facade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.musik-video-section .youtube-facade iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* YouTube Logo Overlay Placeholder */
 .musik-video-section .mvt-yt-badge {
   position: absolute;
@@ -436,8 +452,7 @@
   font-size: 0.6rem;
 }
 
-/* Play Button */
-.musik-video-section .mvt-play-btn {
+.musik-video-section .play-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -453,22 +468,22 @@
   transition: all 0.3s ease;
 }
 
-.musik-video-section .mvt-play-btn::after {
+.musik-video-section .play-button::after {
   content: "";
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 8px 0 8px 12px;
   border-color: transparent transparent transparent white;
-  margin-left: 4px; /* Optically center the triangle */
+  margin-left: 4px;
   transition: border-color 0.3s ease;
 }
 
-.musik-video-section .mvt-card:hover .mvt-play-btn {
+.musik-video-section .mvt-card:hover .play-button {
   background: white;
 }
 
-.musik-video-section .mvt-card:hover .mvt-play-btn::after {
+.musik-video-section .mvt-card:hover .play-button::after {
   border-color: transparent transparent transparent var(--text-dark);
 }
 
@@ -632,7 +647,7 @@
 
 /* Scoped Design Tokens (Bone, Charcoal, Accent) */
 .musik-services-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-dark: #956e31;
   --text-dark: #111111;
   --text-gray: #555555;
@@ -882,7 +897,7 @@
 
 /* Scoped Design Tokens */
 .musik-team-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-hover: #9c7438;
   --text-dark: #1a1a1a;
   --text-gray: #666666;
@@ -1011,7 +1026,7 @@
 }
 
 .musik-team-section .mteam-btn {
-  background: linear-gradient(135deg, #b88a44 0%, #8c6428 100%);
+  background: linear-gradient(135deg, #8f6826 0%, #8c6428 100%);
   color: white;
   border: none;
   padding: 1.2rem 2rem;
@@ -1196,7 +1211,7 @@
 
 /* Scoped CSS Variables */
 .musik-partners-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-hover: #9c7438;
   --text-dark: #111111;
   --text-gray: #666666;
@@ -1441,7 +1456,7 @@
   .musik-partners-section .mp-grid-8 { grid-template-columns: repeat(5, 1fr); }
   .musik-partners-section .mp-grid-10 { grid-template-columns: repeat(5, 1fr); }
 }
-}
+
 
 @media (max-width: 992px) {
   .musik-partners-section .mp-grid-8 { grid-template-columns: repeat(3, 1fr); }
@@ -1471,7 +1486,7 @@
 
 /* Scoped Design Tokens */
 .musik-faq-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-hover: #9c7438;
   --text-dark: #111111;
   --text-gray: #666666;

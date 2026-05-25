@@ -14,9 +14,9 @@ await mkdir(OUT_DIR, { recursive: true });
 // =============================================
 const existingImages = [
   { src: 'images/hero-image.jpeg', out: 'hero-image.webp', maxW: 1600 },
-  { src: 'images/jasmine-successstory.jpeg', out: 'jasmine-successstory.webp', maxW: 800 },
-  { src: 'images/tommy-successstory.jpeg', out: 'tommy-successstory.webp', maxW: 800 },
-  { src: 'images/wendy-successstory.jpeg', out: 'wendy-successstory.webp', maxW: 800 },
+  { src: 'images/jasmine-successstory.jpeg', out: 'jasmine-successstory.webp', maxW: 300 },
+  { src: 'images/tommy-successstory.jpeg', out: 'tommy-successstory.webp', maxW: 300 },
+  { src: 'images/wendy-successstory.jpeg', out: 'wendy-successstory.webp', maxW: 300 },
   { src: 'images/mrp-logo.jpeg', out: 'mrp-logo.webp', maxW: 300 },
   { src: 'images/stephen-wrench-CEO.jpg', out: 'stephen-wrench-ceo.webp', maxW: 400 },
   { src: 'images/rhonda-head-PRESIDENT.jpg', out: 'rhonda-head-president.webp', maxW: 400 },

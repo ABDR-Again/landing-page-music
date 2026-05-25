@@ -18,7 +18,7 @@
 
 /* Scoped CSS Variables */
 .musik-hero-section {
-  --primary-gold: #b88a44;
+  --primary-gold: #8f6826;
   --primary-gold-hover: #a37835;
   --text-dark: #111111;
   --text-gray: #555555;
@@ -244,13 +244,13 @@
    object-fit: contain;
 }
 
-.musik-hero-section .mf-stat-content h3 {
+.musik-hero-section .mf-stat-content .mf-stat-val {
   font-size: clamp(1.5rem, 3vh + 1vw, 2.2rem);
   margin: 0 0 0.2rem 0;
   font-weight: 500;
 }
 
-.musik-hero-section .mf-stat-content h4 {
+.musik-hero-section .mf-stat-content .mf-stat-lbl {
   font-size: 0.85rem;
   margin: 0 0 0.2rem 0;
   text-transform: uppercase;
