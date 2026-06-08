@@ -11,7 +11,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
   <!-- Preload Hero Image (above the fold) -->
   <link rel="preload" as="image" href="./optimized/hero-image.webp" type="image/webp">
@@ -20,10 +20,7 @@
   <link rel="stylesheet" href="./critical.css">
 
   <!-- Main CSS (below-the-fold sections) — deferred loading -->
-  <link rel="stylesheet" href="./style.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="./style.css">
-  </noscript>
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/webp" href="./optimized/mrp-logo.webp">
 </head>
 
@@ -43,8 +40,8 @@
           professional production, and global exposure that opens real doors.</p>
 
         <div class="mf-cta-group">
-          <button class="mf-btn-primary">Start Free Assessment &rarr;</button>
-          <button class="mf-btn-secondary">View Our Success Stories &rarr;</button>
+          <a href="#assessment-form" class="mf-btn-primary">Start your assessment</a>
+          
         </div>
       </div>
 
@@ -63,7 +60,7 @@
     <div class="mf-stats-bar">
       <div class="mf-stat-item">
         <div class="mf-stat-icon">
-          <img src="./optimized/icon-sound-radio.webp" alt="Antenna Icon" width="30" height="30" loading="lazy" decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
         </div>
         <div class="mf-stat-content">
           <div class="mf-stat-val">250,000+</div>
@@ -74,7 +71,7 @@
 
       <div class="mf-stat-item">
         <div class="mf-stat-icon">
-          <img src="./optimized/icon-community.webp" alt="Globe Icon" width="30" height="30" loading="lazy" decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
         </div>
         <div class="mf-stat-content">
           <div class="mf-stat-val">180+</div>
@@ -85,7 +82,7 @@
 
       <div class="mf-stat-item">
         <div class="mf-stat-icon">
-          <img src="./optimized/icon-music.webp" alt="Microphone Icon" width="30" height="30" loading="lazy" decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
         </div>
         <div class="mf-stat-content">
           <div class="mf-stat-lbl" style="font-size: 1.1rem; margin-top: 5px;">Real Radio Airplay</div>
@@ -97,15 +94,58 @@
   </section>
 
 
+  
   <!-- ====================================================
-       SECTION 2: SUCCESS STORIES
+       SECTION 2: THE PROBLEM
+       ==================================================== -->
+  <section class="musik-problem-section">
+    <div class="mprob-container">
+      <div class="mprob-header">
+        <h2 class="mprob-title">The Industry is Loud. <br><span>It's Hard to Be Heard.</span></h2>
+        <p class="mprob-subtitle">Independent artists face an uphill battle. Here is what stands in your way, and exactly how we tear it down.</p>
+      </div>
+
+      <div class="mprob-grid">
+        <div class="mprob-card">
+          <div class="mprob-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></svg>
+          </div>
+          <h3 class="mprob-card-title">The Gatekeepers</h3>
+          <p class="mprob-card-desc"><strong>Problem:</strong> Major labels and industry insiders often ignore independent talent.<br><br><strong>Solution:</strong> We bypass the gatekeepers, giving you direct access to over 250,000 global radio programmers.</p>
+        </div>
+
+        <div class="mprob-card">
+          <div class="mprob-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" y1="8" x2="23" y2="14"/><line x1="23" y1="8" x2="17" y2="14"/></svg>
+          </div>
+          <h3 class="mprob-card-title">The Fake Streams</h3>
+          <p class="mprob-card-desc"><strong>Problem:</strong> Many "promotion" services rely on bots and fake playlists that don't build a real fanbase.<br><br><strong>Solution:</strong> We guarantee 100% real radio airplay to genuine listeners across 180+ countries.</p>
+        </div>
+
+        <div class="mprob-card">
+          <div class="mprob-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="mprob-card-title">The Marketing Grind</h3>
+          <p class="mprob-card-desc"><strong>Problem:</strong> You want to make music, not spend hours marketing into the void with zero return.<br><br><strong>Solution:</strong> We handle the heavy lifting of strategic charting and media campaigns so you can focus on your art.</p>
+        </div>
+      </div>
+      
+      <div class="mprob-actions">
+        <a href="#assessment-form" class="mprob-btn-primary">Start your assessment</a>
+      </div>
+    </div>
+  </section>
+
+<!-- ====================================================
+       SECTION 3: SUCCESS STORIES
        ==================================================== -->
   <section class="musik-success-section">
 
     <div class="mf-header-wrapper">
-      <div class="mf-overline">Real Results. Real Artists.</div>
+      
       <div class="mf-logo-mark">
-        <img src="./optimized/mrp-logo.webp" alt="M Logo" width="40" height="40" loading="lazy" decoding="async">
+        <img src="./optimized/mrp-logo.webp" alt="M Logo" width="200" height="200" loading="lazy" decoding="async">
       </div>
       <h2 class="mf-title">Success Stories That <br><span>Speak for Themselves</span></h2>
       <p class="mf-subtitle">We help independent artists cut through the noise with strategic radio promotion,
@@ -186,8 +226,8 @@
     </div>
 
     <div class="mf-actions">
-      <button class="mf-btn-primary">Start Free Assessment &rarr;</button>
-      <a href="#" class="mf-link-secondary">View All Success Stories &rarr;</a>
+      <a href="#assessment-form" class="mf-btn-primary">Start your assessment</a>
+      
     </div>
 
   </section>
@@ -200,7 +240,7 @@
 
     <div class="mvt-header">
       <div class="mvt-logo">
-        <img src="./optimized/mrp-logo.webp" alt="Musik and Film Logo" width="200" height="50" loading="lazy"
+        <img src="./optimized/mrp-logo.webp" alt="Musik and Film Logo" width="600" height="160" loading="lazy"
           decoding="async">
       </div>
       <h2 class="mvt-title">What Artists Are <span>Saying on Video</span></h2>
@@ -284,8 +324,8 @@
         <div class="mvt-divider-icon"></div>
       </div>
       <div class="mvt-actions">
-        <button class="mvt-btn-primary">See More Testimonials &rarr;</button>
-        <a href="#" class="mvt-link-secondary">View Success Stories</a>
+        <a href="#assessment-form" class="mvt-btn-primary">Start your assessment</a>
+        
       </div>
     </div>
 
@@ -303,15 +343,14 @@
       <div class="msrv-divider-line"></div>
       <p class="msrv-desc">From radio airplay to interviews, charting campaigns to digital exposure &mdash; we do it all
         to grow your music career and connect your sound with audiences around the globe.</p>
-      <a href="#" class="msrv-btn">Explore Our Services &rarr;</a>
+      <a href="#assessment-form" class="msrv-btn">Start your assessment</a>
     </div>
 
     <div class="msrv-right-col">
 
       <div class="msrv-card">
         <div class="msrv-icon-wrapper">
-          <img src="./optimized/icon-sound-radio.webp" alt="Radio Icon" width="28" height="28" loading="lazy"
-            decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
         </div>
         <h3 class="msrv-card-title">Radio Airplay<br>Promotion</h3>
         <p class="msrv-card-desc">We pitch to 20,000+ radio stations to get your music real airplay.</p>
@@ -320,8 +359,7 @@
 
       <div class="msrv-card">
         <div class="msrv-icon-wrapper">
-          <img src="./optimized/icon-mic.webp" alt="Mic Icon" width="28" height="28" loading="lazy"
-            decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
         </div>
         <h3 class="msrv-card-title">Radio Interview<br>Arrangements</h3>
         <p class="msrv-card-desc">We get you interviewed on radio shows and podcasts that build your fanbase.</p>
@@ -330,8 +368,7 @@
 
       <div class="msrv-card">
         <div class="msrv-icon-wrapper">
-          <img src="./optimized/icon-increase.webp" alt="Chart Icon" width="28" height="28" loading="lazy"
-            decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3 class="msrv-card-title">Charting & Media<br>Campaigns</h3>
         <p class="msrv-card-desc">Strategic campaigns that help your music chart and gain media attention.</p>
@@ -340,8 +377,7 @@
 
       <div class="msrv-card">
         <div class="msrv-icon-wrapper">
-          <img src="./optimized/icon-community.webp" alt="Network Icon" width="28" height="28" loading="lazy"
-            decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
         </div>
         <h3 class="msrv-card-title">Digital & Social<br>Promotion</h3>
         <p class="msrv-card-desc">Boost your music across social media, playlists, blogs and more.</p>
@@ -350,8 +386,7 @@
 
       <div class="msrv-card">
         <div class="msrv-icon-wrapper">
-          <img src="./optimized/icon-integration.webp" alt="Strategy Icon" width="28" height="28" loading="lazy"
-            decoding="async">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852 1.002 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
         </div>
         <h3 class="msrv-card-title">Consulting &<br>Strategy</h3>
         <p class="msrv-card-desc">Custom promotion plans and expert guidance tailored to your goals.</p>
@@ -383,7 +418,7 @@
       <p class="mteam-desc">Industry veterans. Proven track records. One mission &mdash; to help independent artists get
         heard worldwide.</p>
 
-      <a href="#" class="mteam-btn">View Our Success Stories &rarr;</a>
+      <a href="#assessment-form" class="mteam-btn">Start your assessment</a>
     </div>
 
     <div class="mteam-grid">
@@ -395,14 +430,13 @@
               decoding="async">
           </div>
           <div class="mteam-role-icon">
-            <img src="./optimized/icon-star.webp" alt="Star" width="14" height="14" loading="lazy"
-              decoding="async">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
         </div>
         <h3 class="mteam-name">Stephen Wrench</h3>
         <p class="mteam-role">Founder / CEO</p>
         <p class="mteam-bio">40+ years in music, production, labels, TV/film & media. Grammy Voting Member.</p>
-        <a href="#" class="mteam-social" aria-label="LinkedIn">in</a>
+        
       </div>
 
       <div class="mteam-card">
@@ -412,14 +446,13 @@
               decoding="async">
           </div>
           <div class="mteam-role-icon">
-            <img src="./optimized/icon-profile.webp" alt="People" width="14" height="14" loading="lazy"
-              decoding="async">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
         </div>
         <h3 class="mteam-name">Rhonda Houston</h3>
         <p class="mteam-role">Vice President</p>
         <p class="mteam-bio">Sales & Marketing expert with 20+ years building relationships and driving results.</p>
-        <a href="#" class="mteam-social" aria-label="LinkedIn">in</a>
+        
       </div>
 
       <div class="mteam-card">
@@ -429,14 +462,13 @@
               alt="Wayne Killius" width="300" height="300" loading="lazy" decoding="async">
           </div>
           <div class="mteam-role-icon">
-            <img src="./optimized/icon-music.webp" alt="Music" width="14" height="14" loading="lazy"
-              decoding="async">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
           </div>
         </div>
         <h3 class="mteam-name">Wayne Killius</h3>
         <p class="mteam-role">Chief Operating Officer</p>
         <p class="mteam-bio">Producer, songwriter, musician (Drums). 30+ years in the Nashville music industry.</p>
-        <a href="#" class="mteam-social" aria-label="LinkedIn">in</a>
+        
       </div>
 
       <div class="mteam-card">
@@ -446,14 +478,13 @@
               width="300" height="300" loading="lazy" decoding="async">
           </div>
           <div class="mteam-role-icon">
-            <img src="./optimized/icon-feather.webp" alt="Feather" width="14" height="14" loading="lazy"
-              decoding="async">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="6.5"/></svg>
           </div>
         </div>
         <h3 class="mteam-name">Robyn Robbins</h3>
         <p class="mteam-role">Creative Director</p>
         <p class="mteam-bio">Award-winning songwriter with cuts by Martina McBride, Dolly Parton & more.</p>
-        <a href="#" class="mteam-social" aria-label="LinkedIn">in</a>
+        
       </div>
 
       <div class="mteam-card">
@@ -463,14 +494,13 @@
               decoding="async">
           </div>
           <div class="mteam-role-icon">
-            <img src="./optimized/icon-sound-radio.webp" alt="Wave" width="14" height="14" loading="lazy"
-              decoding="async">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
           </div>
         </div>
         <h3 class="mteam-name">Terry Nails</h3>
         <p class="mteam-role">Music Producer</p>
         <p class="mteam-bio">Grammy-nominated producer/engineer with credits from Dolly Parton to Nickelback.</p>
-        <a href="#" class="mteam-social" aria-label="LinkedIn">in</a>
+        
       </div>
 
       <div class="mteam-card">
@@ -480,15 +510,14 @@
               decoding="async">
           </div>
           <div class="mteam-role-icon">
-            <img src="./optimized/icon-fm.webp" alt="EQ" width="14" height="14" loading="lazy"
-              decoding="async">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg>
           </div>
         </div>
         <h3 class="mteam-name">Kenny Black</h3>
         <p class="mteam-role">Music Producer</p>
         <p class="mteam-bio">Grammy-winning producer/engineer. Worked with Keith Urban, Taylor Swift, Trace Adkins &
           more.</p>
-        <a href="#" class="mteam-social" aria-label="LinkedIn">in</a>
+        
       </div>
 
     </div>
@@ -677,8 +706,8 @@
       </div>
 
       <div class="mp-actions mp-animate mp-delay-3">
-        <button class="mp-btn mp-btn-primary">Start Free Assessment &rarr;</button>
-        <button class="mp-btn mp-btn-secondary">View Success Stories &rarr;</button>
+        <a href="#assessment-form" class="mp-btn mp-btn-primary">Start your assessment</a>
+        
       </div>
 
     </div>
@@ -708,7 +737,7 @@
 
             <div class="mfaq-image-overlay">
               <img class="mfaq-overlay-logo" src="./optimized/mrp-logo.webp"
-                alt="Musik and Film Logo" width="200" height="80" loading="lazy" decoding="async">
+                alt="Musik and Film Logo" width="500" height="260" loading="lazy" decoding="async">
               <div class="mfaq-overlay-text">
                 Amplifying Talent.<br>Connecting The World.
               </div>
@@ -718,8 +747,7 @@
           <div class="mfaq-stats-card">
             <div class="mfaq-stat">
               <div class="mfaq-stat-icon">
-                <img src="./optimized/icon-sound-radio.webp" alt="Antenna" width="24" height="24"
-                  loading="lazy" decoding="async">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
               </div>
               <h3 class="mfaq-stat-val">250,000+</h3>
               <div class="mfaq-stat-label">Radio Stations</div>
@@ -728,8 +756,7 @@
 
             <div class="mfaq-stat">
               <div class="mfaq-stat-icon">
-                <img src="./optimized/icon-community.webp" alt="Globe" width="24" height="24" loading="lazy"
-                  decoding="async">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
               </div>
               <h3 class="mfaq-stat-val">180+</h3>
               <div class="mfaq-stat-label">Countries</div>
@@ -738,8 +765,7 @@
 
             <div class="mfaq-stat">
               <div class="mfaq-stat-icon">
-                <img src="./optimized/icon-music.webp" alt="Mic" width="24" height="24" loading="lazy"
-                  decoding="async">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
               </div>
               <h3 class="mfaq-stat-label" style="font-size: 0.8rem; margin-top: 5px;">Real Radio Airplay</h3>
               <p class="mfaq-stat-desc">Real listeners, Real results</p>
@@ -820,8 +846,8 @@
           </div>
 
           <div class="mfaq-actions">
-            <a href="#" class="mfaq-btn mfaq-btn-primary">Start Free Assessment &rarr;</a>
-            <a href="#" class="mfaq-btn mfaq-btn-secondary">See More FAQs &rarr;</a>
+            <a href="#assessment-form" class="mfaq-btn mfaq-btn-primary">Start your assessment</a>
+            
           </div>
 
         </div>
@@ -829,7 +855,30 @@
       </div>
     </div>
 
+  
+  <!-- ====================================================
+       SECTION 8: FINAL ASSESSMENT
+       ==================================================== -->
+  <section class="musik-final-section" id="assessment-form">
+    <div class="mfs-container">
+      <div class="mfs-text-col">
+        <h2 class="mfs-title">Ready to Take Your Music <span>Worldwide?</span></h2>
+        <p class="mfs-desc">Fill out our free assessment to see if your music is ready for our global radio and promotion network. Let's make an impact together.</p>
+        <ul class="mfs-benefits">
+          <li>Get your music reviewed by industry veterans</li>
+          <li>Access a network of 250,000+ radio stations</li>
+          <li>Find the right strategy for your genre</li>
+        </ul>
+      </div>
+      <div class="mfs-form-col">
+        <div class="mfs-form-wrapper">
+          <iframe src="https://api.leadconnectorhq.com/widget/quiz/uGnSi3m5Vf5nPpXzK4Dl" style="border:none;width:100%;height:600px;" scrolling="no" id="uGnSi3m5Vf5nPpXzK4Dl" title="quiz"></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
   </section>
+
   </main>
 
   <!-- YouTube Facade Script -->

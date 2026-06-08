@@ -5,6 +5,10 @@
    Above-the-fold styles loaded with highest priority
    ====================================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -18,14 +22,14 @@
 
 /* Scoped CSS Variables */
 .musik-hero-section {
-  --primary-gold: #8f6826;
-  --primary-gold-hover: #a37835;
-  --text-dark: #111111;
-  --text-gray: #555555;
-  --bg-light: #fdfcf9;
-  --border-color: #e5e0d8;
-  --font-sans: 'Montserrat', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --primary-gold: #6B2FB8;
+  --primary-gold-hover: #542296;
+  --text-dark: #FFFFFF;
+  --text-gray: #D3D3D3;
+  --bg-light: #09070F;
+  --border-color: #2A203B;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'DM Sans', sans-serif;
   
   font-family: var(--font-sans);
   background-color: var(--bg-light);
@@ -83,7 +87,7 @@
 }
 
 .musik-hero-section .mf-title span {
-  font-style: italic;
+  font-weight: 700;
   color: var(--primary-gold);
   font-weight: 600;
 }
@@ -120,7 +124,7 @@
 .musik-hero-section .mf-btn-primary:hover {
   background: var(--primary-gold-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(184, 138, 68, 0.3);
+  box-shadow: 0 4px 15px rgba(107, 47, 184, 0.3);
 }
 
 .musik-hero-section .mf-btn-secondary {
@@ -161,7 +165,7 @@
   left: 0;
   width: 30%;
   height: 100%;
-  background: linear-gradient(to right, var(--bg-light) 0%, rgba(253,252,249,0) 100%);
+  background: linear-gradient(to right, var(--bg-light) 0%, rgba(9,7,15,0) 100%);
   z-index: 2;
 }
 
@@ -177,7 +181,7 @@
   position: absolute;
   bottom: 4vh;
   right: 15%;
-  background: #1a1a1a;
+  background: #1A1525;
   color: white;
   padding: 2rem;
   max-width: 300px;
@@ -286,4 +290,10 @@
   .musik-hero-section .mf-image-overlay { display: none; }
   .musik-hero-section .mf-quote-card { right: 5%; bottom: 2rem; }
   .musik-hero-section .mf-cta-group { flex-direction: column; align-items: flex-start; }
+}
+
+/* Global link-button reset */
+a.mf-btn-primary,
+a.mf-btn-secondary {
+  text-decoration: none;
 }
