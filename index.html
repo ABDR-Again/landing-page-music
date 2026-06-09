@@ -12,17 +12,35 @@
   <meta name="description"
     content="We help independent artists break through the noise with powerful radio promotion, professional production, and global exposure that opens real doors.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <!-- Local Fonts -->
 
   <!-- Preload Hero Image (above the fold) -->
   <link rel="preload" as="image" href="./optimized/hero-image.webp" type="image/webp">
 
   <!-- Critical CSS (Hero / above-the-fold) — render-blocking -->
   <style>
-/* Google Fonts loaded via <link> in HTML head for performance */
+/* Local Fonts */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ======================================================
    CRITICAL CSS — Hero Section (.musik-hero-section)
