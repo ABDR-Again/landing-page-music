@@ -36,3 +36,5 @@ coverage/
 # Caches
 .eslintcache
 *.tsbuildinfo
+
+# Image optimization cache
