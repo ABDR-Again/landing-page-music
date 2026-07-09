@@ -3,6 +3,7 @@ node_modules/
 
 # Build output
 dist/
+.vite/
 
 # OS-specific files
 .DS_Store
@@ -27,3 +28,11 @@ pnpm-debug.log*
 # Temporary files
 *.zip
 gemini-code-*.html
+
+# Testing and Coverage
+coverage/
+.nyc_output/
+
+# Caches
+.eslintcache
+*.tsbuildinfo
