@@ -64,6 +64,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+}
+
 /* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -105,12 +109,77 @@ html {
   box-sizing: border-box;
 }
 
+/* --- Fixed Site Header --- */
+.musik-site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.9rem 5%;
+  background: rgba(9, 7, 15, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-sizing: border-box;
+}
+
+.musik-site-header .site-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.musik-site-header .site-logo img {
+  display: block;
+  width: auto;
+  height: 52px;
+  object-fit: contain;
+}
+
+.musik-site-header .site-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.85rem 1.35rem;
+  background: linear-gradient(135deg, #7A38D6 0%, #5F25AA 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 6px;
+  box-shadow: 0 10px 22px rgba(107, 47, 184, 0.28);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, filter 0.25s ease;
+}
+
+.musik-site-header .site-link:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 14px 28px rgba(107, 47, 184, 0.42);
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+}
+
+.musik-site-header .site-link:focus-visible {
+  outline: 2px solid #C9A8FF;
+  outline-offset: 3px;
+}
+
 /* --- Hero Main Content --- */
 .musik-hero-section .mf-hero-container {
   display: flex;
   flex: 1;
   position: relative;
-  padding: 0 5%;
+  padding: 78px 5% 0;
 }
 
 .musik-hero-section .mf-hero-content {
@@ -339,6 +408,19 @@ html {
 }
 
 @media (max-width: 768px) {
+  .musik-site-header {
+    padding: 0.75rem 5%;
+  }
+  .musik-site-header .site-logo img {
+    height: 42px;
+  }
+  .musik-site-header .site-link {
+    min-height: 40px;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+  }
+  .musik-hero-section .mf-hero-container { padding-top: 66px; }
   .musik-hero-section .mf-hero-container { flex-direction: column; }
   .musik-hero-section .mf-hero-content { width: 100%; padding: 3rem 0; }
   .musik-hero-section .mf-hero-visual { position: relative; width: 100%; height: 400px; }
@@ -370,6 +452,13 @@ a.mf-btn-secondary {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- End Google Tag Manager (noscript) -->
+  <header class="musik-site-header">
+    <a class="site-logo" href="/" aria-label="Musik and Film home">
+      <img src="./optimized/mrp-logo.webp" alt="Musik and Film Logo" width="160" height="160" fetchpriority="high">
+    </a>
+    <a class="site-link" href="https://musikandfilm.com">VISIT OUR WEBSITE</a>
+  </header>
+
   <main>
   <!-- ====================================================
        SECTION 1: HERO
