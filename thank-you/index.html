@@ -68,12 +68,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: grid;
       place-items: center;
       overflow: hidden;
-      padding: 24px;
+      padding: 112px 24px 32px;
       color: var(--white);
       background:
         radial-gradient(circle at 50% 22%, rgba(107, 47, 184, .23), transparent 36%),
         var(--ink);
       font-family: "DM Sans", sans-serif;
+    }
+
+    .site-header {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 22px clamp(18px, 5vw, 56px);
+      background: linear-gradient(180deg, rgba(9, 7, 15, .92), rgba(9, 7, 15, .68) 72%, transparent);
+      backdrop-filter: blur(14px);
+    }
+
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .header-logo {
+      width: clamp(150px, 18vw, 220px);
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 26px rgba(0, 0, 0, .34));
+    }
+
+    .header-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      color: var(--white);
+      background: rgba(107, 47, 184, .18);
+      border: 1px solid rgba(155, 99, 229, .42);
+      border-radius: 999px;
+      font-size: .92rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, .18);
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .header-link:hover {
+      background: rgba(107, 47, 184, .32);
+      border-color: rgba(155, 99, 229, .7);
+      transform: translateY(-1px);
     }
 
     .ambient {
@@ -124,16 +175,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       inset: 0 0 auto;
       height: 2px;
       background: linear-gradient(90deg, transparent, var(--purple-light), transparent);
-    }
-
-    .logo {
-      position: absolute;
-      top: 22px;
-      left: 24px;
-      width: 54px;
-      height: 54px;
-      object-fit: contain;
-      opacity: .86;
     }
 
     .success-mark {
@@ -278,14 +319,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     @media (max-width: 520px) {
-      body { padding: 16px; }
-      .card { border-radius: 22px; }
-      .logo {
-        top: 18px;
-        left: 18px;
-        width: 42px;
-        height: 42px;
+      body { padding: 104px 16px 24px; }
+      .site-header {
+        padding: 18px 16px;
       }
+      .header-logo {
+        width: 132px;
+      }
+      .header-link {
+        min-height: 40px;
+        padding: 0 13px;
+        font-size: .8rem;
+      }
+      .card { border-radius: 22px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -310,8 +356,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- End Google Tag Manager (noscript) -->
   <div class="ambient" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand-link" href="https://musikandfilm.com" aria-label="Go to Musik and Film main website">
+      <img class="header-logo" src="../optimized/mrp-logo.webp" alt="Musik and Film">
+    </a>
+    <a class="header-link" href="https://musikandfilm.com">Main website</a>
+  </header>
   <main class="card">
-    <img class="logo" src="../optimized/mrp-logo.webp" alt="Musik and Film">
     <div class="success-mark" aria-hidden="true">
       <span class="check"></span>
     </div>
